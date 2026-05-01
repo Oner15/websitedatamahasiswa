@@ -24,7 +24,7 @@
     </div>
 
     <footer>
-        &copy; 2026 Admin Panel - PTI UNESA
+        &copy; 2026 Admin Panel - PTI UNESAa
     </footer>
 </body>
 </html>
