@@ -89,11 +89,16 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <!-- Footer -->
     <footer class="glass border-t border-white/10 py-8 text-center text-purple-200">
         <div class="max-w-7xl mx-auto px-6">
             &copy; 2026 Universitas Bimenesia - Admin Panel MahasiswaDB
         </div>
+=======
+    <footer>
+        &copy; 2026 Admin Panel - PTI UNESAa
+>>>>>>> ff3d73fe3b686d6e436d0a67e735f2664728cbbd
     </footer>
 
 </body>
