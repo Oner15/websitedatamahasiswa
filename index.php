@@ -108,7 +108,7 @@
     <!-- Footer -->
     <footer class="glass border-t border-white/20 py-8 text-center text-blue-200 mt-auto">
         <div class="max-w-7xl mx-auto px-6">
-            &copy; 2026 Universitas Bimenesia - Admin Panel MahasiswaDB
+            &copy; 2026 Universitas Bimenesia - Admin Data Mahasiswa
         </div>
     </footer>
 
