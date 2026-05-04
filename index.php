@@ -27,20 +27,13 @@
 
         /* Animasi Teks */
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .animate-fade-in-up {
             animation: fadeInUp 1s ease-out forwards;
         }
-
         .delay-200 { animation-delay: 200ms; }
         .delay-400 { animation-delay: 400ms; }
         .delay-600 { animation-delay: 600ms; }
@@ -71,11 +64,10 @@
 
     <!-- Main Content -->
     <main class="flex-1">
+        <!-- Hero Section -->
         <div class="hero-bg flex items-center">
             <div class="max-w-5xl mx-auto px-6 text-center">
                 <div class="glass rounded-3xl p-14 max-w-3xl mx-auto">
-                    
-                    <!-- Teks yang Beranimasi -->
                     <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-3 animate-fade-in-up">
                         Selamat Datang di
                     </h1>
@@ -101,6 +93,48 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Fitur Unggulan Section -->
+        <div class="max-w-6xl mx-auto px-6 py-20">
+            <h2 class="text-4xl font-bold text-center mb-16">Fitur Unggulan</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="glass rounded-3xl p-8 hover:scale-105 transition-all duration-300">
+                    <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-list-check text-3xl text-blue-300"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">CRUD Lengkap</h3>
+                    <p class="text-blue-100">
+                        Tambah, Lihat, Edit, dan Hapus data mahasiswa dengan mudah.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass rounded-3xl p-8 hover:scale-105 transition-all duration-300">
+                    <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-3xl text-blue-300"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Pencarian & Sorting</h3>
+                    <p class="text-blue-100">
+                        Cari mahasiswa berdasarkan nama atau NIM, dan urutkan data.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass rounded-3xl p-8 hover:scale-105 transition-all duration-300">
+                    <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-camera text-3xl text-blue-300"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Upload Foto</h3>
+                    <p class="text-blue-100">
+                        Setiap mahasiswa bisa memiliki foto profil.
+                    </p>
+                </div>
+
             </div>
         </div>
     </main>
