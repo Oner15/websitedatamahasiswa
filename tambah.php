@@ -45,8 +45,8 @@ if(!isset($_SESSION['login'])) {
             <div class="flex items-center gap-3">
                 <img src="img/logo bimen - Diedit.png" alt="Logo" class="w-11 h-11 rounded-2xl shadow-xl object-contain bg-white/10 p-1">
                 <div>
-                    <span class="text-2xl font-bold">Universitas</span>
-                    <span class="text-2xl font-bold text-blue-300">Bimenesia</span>
+                    <span class="text-2xl font-bold">Layanan</span>
+                    <span class="text-2xl font-bold text-blue-300">Simensia</span>
                 </div>
             </div>
             <ul class="flex gap-8 text-lg font-medium">

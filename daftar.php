@@ -43,7 +43,7 @@ $total = mysqli_num_rows($query);
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <img src="img/logo bimen - Diedit.png" alt="Logo" class="w-11 h-11 rounded-2xl">
-                <div class="text-2xl font-bold">Universitas <span class="text-blue-300">Bimenesia</span></div>
+                <div class="text-2xl font-bold">Layanan<span class="text-blue-300"> Simensa</span></div>
             </div>
             <ul class="flex gap-8 text-lg">
                 <li><a href="index.php" class="hover:text-blue-300 flex items-center gap-2"><i class="fas fa-home"></i> Home</a></li>
@@ -136,7 +136,7 @@ $total = mysqli_num_rows($query);
     </main>
 
     <footer class="glass py-8 text-center text-blue-200 mt-auto">
-        &copy; 2026 Universitas Bimenesia
+        &copy; 2026 Simensa
     </footer>
 </body>
 </html>
