@@ -1,6 +1,6 @@
 <?php
 session_start();
-// Jika sudah login, langsung ke index
+
 if (isset($_SESSION['login'])) {
     header("Location: index.php");
     exit;
@@ -10,7 +10,7 @@ if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Username: admin | Password: admin123
+    
     if ($username === 'admin' && $password === 'admin123') {
         $_SESSION['login'] = true;
         header("Location: index.php");

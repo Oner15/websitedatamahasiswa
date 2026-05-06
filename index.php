@@ -19,6 +19,7 @@ if (!isset($_SESSION['login'])) { header("Location: login.php"); exit; }
 </head>
 <body class="flex flex-col text-white">
 
+    <!-- Navbar -->
     <nav class="glass border-b border-white/20 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
             <div class="flex items-center gap-3">
@@ -35,6 +36,7 @@ if (!isset($_SESSION['login'])) { header("Location: login.php"); exit; }
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <div class="hero-bg">
         <div class="max-w-7xl mx-auto px-6 w-full">
             <div class="hero-content">
@@ -49,10 +51,62 @@ if (!isset($_SESSION['login'])) { header("Location: login.php"); exit; }
         </div>
     </div>
 
+    <!-- Fitur Unggulan Section -->
+    <div class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center mb-16">Fitur Layanan Simensa</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Fitur 1 -->
+            <div class="glass rounded-3xl p-8 hover:scale-105 transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6"><i class="fas fa-list-check text-3xl text-blue-300"></i></div>
+                <h3 class="text-2xl font-semibold mb-3">Manajemen CRUD</h3>
+                <p class="text-blue-100">Tambah, lihat detail, perbarui, dan hapus data mahasiswa secara langsung dari antarmuka yang intuitif.</p>
+            </div>
+
+            <!-- Fitur 2 -->
+            <div class="glass rounded-3xl p-8 hover:scale-105 transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6"><i class="fas fa-search text-3xl text-blue-300"></i></div>
+                <h3 class="text-2xl font-semibold mb-3">Pencarian Cepat</h3>
+                <p class="text-blue-100">Temukan data mahasiswa dalam hitungan detik melalui kotak pencarian berdasarkan Nama maupun NIM.</p>
+            </div>
+
+            <!-- Fitur 3 -->
+            <div class="glass rounded-3xl p-8 hover:scale-105 transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6"><i class="fas fa-sort-amount-down text-3xl text-blue-300"></i></div>
+                <h3 class="text-2xl font-semibold mb-3">Sistem Sorting</h3>
+                <p class="text-blue-100">Urutkan tabel data secara otomatis dari A-Z atau berdasarkan urutan NIM terkecil hingga terbesar.</p>
+            </div>
+
+            <!-- Fitur 4 -->
+            <div class="glass rounded-3xl p-8 hover:scale-105 transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6"><i class="fas fa-shield-alt text-3xl text-blue-300"></i></div>
+                <h3 class="text-2xl font-semibold mb-3">Keamanan Terpusat</h3>
+                <p class="text-blue-100">Dilengkapi proteksi akses berbasis Login Session dan fitur validasi ganda untuk mencegah NIM duplikat.</p>
+            </div>
+
+            <!-- Fitur 5 -->
+            <div class="glass rounded-3xl p-8 hover:scale-105 transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6"><i class="fas fa-user-circle text-3xl text-blue-300"></i></div>
+                <h3 class="text-2xl font-semibold mb-3">Smart Avatar API</h3>
+                <p class="text-blue-100">Mendukung upload foto fisik dan otomatis menghasilkan inisial foto profil jika mahasiswa tidak memiliki foto.</p>
+            </div>
+
+            <!-- Fitur 6 -->
+            <div class="glass rounded-3xl p-8 hover:scale-105 transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6"><i class="fas fa-mobile-alt text-3xl text-blue-300"></i></div>
+                <h3 class="text-2xl font-semibold mb-3">Desain Responsif</h3>
+                <p class="text-blue-100">Tampilan *glassmorphism* modern yang secara otomatis menyesuaikan ukuran layar PC, Tablet, maupun Smartphone Anda.</p>
+            </div>
+
+        </div>
+    </div>
+
+    
     <footer class="glass border-t border-white/20 py-8 text-center text-blue-200 mt-auto">
         <div class="max-w-7xl mx-auto px-6">&copy; 2026 Simensa - Admin Data Mahasiswa</div>
     </footer>
 
+    
     <script>
         const btn = document.getElementById('hamburger-btn'); const menu = document.getElementById('nav-menu'); const icon = btn.querySelector('i');
         btn.addEventListener('click', () => { menu.classList.toggle('hidden'); menu.classList.toggle('flex'); if(menu.classList.contains('flex')) { icon.classList.remove('fa-bars'); icon.classList.add('fa-times'); } else { icon.classList.remove('fa-times'); icon.classList.add('fa-bars'); } });
